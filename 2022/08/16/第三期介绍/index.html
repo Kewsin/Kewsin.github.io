@@ -80,6 +80,8 @@
     			
             
     			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于</a>
@@ -196,7 +198,7 @@
 <p>其实说实话，我自己心里并没有对这一期有一个很清晰的认识。因为我觉得生活是广袤的。他不像是信息技术，甚至可以说，信息技术本就是生活的一部分。所以，我个人认为生活的很多东西是值得我们去发现，去体会的。</p>
 <p>这期的内容会很杂，甚至我可能到最后把我想发的所有东西都发到这期来，当然我也想尽量避免吧哈哈，毕竟一个条理清晰的博客才是更多人所需要的。</p>
 <p>第三期的内容发表可能会极其不合常理，有时可能一天更新好几篇，但有时可能一个月都不想更新。（当然如果以后看的人多了，会调整的吧，希望吧哈哈哈）</p>
-<p>联系邮箱：<a href="mailto:&#x4b;&#101;&#x77;&#x73;&#x69;&#110;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#x6d;">&#x4b;&#101;&#x77;&#x73;&#x69;&#110;&#64;&#49;&#54;&#x33;&#46;&#99;&#111;&#x6d;</a>(建议) &#x2F; <a href="mailto:&#x33;&#x34;&#x35;&#52;&#x31;&#54;&#55;&#53;&#x35;&#x38;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;">&#x33;&#x34;&#x35;&#52;&#x31;&#54;&#55;&#53;&#x35;&#x38;&#x40;&#113;&#x71;&#46;&#x63;&#111;&#x6d;</a>(个人)</p>
+<p>联系邮箱：<a href="mailto:&#75;&#x65;&#x77;&#115;&#x69;&#x6e;&#x40;&#49;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#75;&#x65;&#x77;&#115;&#x69;&#x6e;&#x40;&#49;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;</a>(建议) &#x2F; <a href="mailto:&#51;&#52;&#53;&#52;&#x31;&#54;&#55;&#x35;&#x35;&#56;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#51;&#52;&#53;&#52;&#x31;&#54;&#55;&#x35;&#x35;&#56;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a>(个人)</p>
 
       
 
@@ -370,6 +372,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
+      
+      
     
       
       
@@ -381,13 +385,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
       
         
     </ul>
@@ -424,11 +430,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+                <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
               </li>
             
             <div class="clearfix"></div>
@@ -474,6 +480,30 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="/%E6%9A%82" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>0</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/%E6%97%A0" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/%E5%8F%8B" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/%E9%93%BE" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>3</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     

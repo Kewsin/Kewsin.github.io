@@ -80,6 +80,8 @@
     			
             
     			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于</a>
@@ -194,7 +196,7 @@
 <p>我是一个很爱捣腾的人，不管是之前在家庭的Windows的台式机上，还是现在在自己MacBook上，当我在学习工作之余，都会想着捣腾一些新玩意。想不出来捣腾什么怎么办？瞎想。不会，没人教怎么办？去网上找资料和教程，自己学。有时候，我会捣腾大半天，以至于我妈有时候都会以一副诧异的眼光看着我，她想不明白我为什么能在电脑面前坐这么久。正因为此，我也积累了很多资料以及经验，有一个属于自己的“百宝箱”。</p>
 <p>不论是一些电脑的小技巧，手机的小发现，甚至是一些学习资源、有趣的软件等等，在我的脑海中，正如海中的鱼，看似一片汪洋大海，实则撒网一收一大片。当然，也没有说的这么夸张啦。所以我想，在这一期内容中，我想着手写一些文章，来讲讲我的一些宝藏发现，关于科技、网络、计算机类的。也由于是我本人自己的技术瓶颈，这期的分享从目前看来，将不会是难懂的代码，也不会是不着边际不实用的东西，我想，在我的分享中，一定能有帮到你的东西！</p>
 <p>那么，就让我们，开始吧！</p>
-<p>联系邮箱：<a href="mailto:&#x4b;&#x65;&#x77;&#x73;&#x69;&#x6e;&#64;&#49;&#x36;&#x33;&#46;&#99;&#111;&#x6d;">&#x4b;&#x65;&#x77;&#x73;&#x69;&#x6e;&#64;&#49;&#x36;&#x33;&#46;&#99;&#111;&#x6d;</a>(建议) &#x2F; <a href="mailto:&#51;&#52;&#53;&#52;&#49;&#54;&#x37;&#53;&#x35;&#56;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#51;&#52;&#53;&#52;&#49;&#54;&#x37;&#53;&#x35;&#56;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;</a>(个人)</p>
+<p>联系邮箱：<a href="mailto:&#75;&#101;&#x77;&#115;&#x69;&#x6e;&#64;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#109;">&#75;&#101;&#x77;&#115;&#x69;&#x6e;&#64;&#x31;&#54;&#x33;&#x2e;&#x63;&#111;&#109;</a>(建议) &#x2F; <a href="mailto:&#51;&#x34;&#53;&#x34;&#49;&#54;&#x37;&#53;&#53;&#x38;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;">&#51;&#x34;&#53;&#x34;&#49;&#54;&#x37;&#53;&#53;&#x38;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109;</a>(个人)</p>
 
       
 
@@ -377,6 +379,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
+      
+      
     
       
       
@@ -388,13 +392,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于</a></li>
       
         
     </ul>
@@ -431,11 +437,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+                <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
               </li>
             
             <div class="clearfix"></div>
@@ -481,6 +487,30 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="/%E6%9A%82" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>0</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/%E6%97%A0" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>1</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/%E5%8F%8B" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>2</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/%E9%93%BE" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>3</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
